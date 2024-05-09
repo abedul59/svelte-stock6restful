@@ -25,6 +25,8 @@ function handleSubmit() {
       console.log(tStockName)
       console.log(tNewestSeason)
       console.log(tStock6data2)
+	  tStockName = [];
+	  tNewestSeason = [];
     })
 }
 	export let tStockName = [], tNewestSeason = [], tStock6data2;
