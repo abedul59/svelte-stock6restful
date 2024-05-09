@@ -1,6 +1,7 @@
 <script>
 function handleSubmit() {
-  let result2 = `https://stock6-restfulex.onrender.com/api/Stock6Sign202403/getstockinfo/${inputText2.value}`
+  let name2;
+  let result2 = `https://stock6-restfulex.onrender.com/api/Stock6Sign202403/getstockinfo/${name2}`
 
   console.log(`最新得到網址為${result2}`)
   fetch(result2)
@@ -18,9 +19,8 @@ function handleSubmit() {
       console.log(tStock6data2)
     })
 }
-	export let result2, tStockName, tNewestSeason, tStock6data2;
+	export let result2, tStockName, tNewestSeason, tStock6data2, name2;
 	export let name;
-	export let name2 = '';
 
 
 </script>
@@ -32,13 +32,13 @@ function handleSubmit() {
 	<input bind:value={name2} placeholder="enter your name" />
 	<p>Hello {name2 || 'stranger'}!</p>
 	<button on:click|once={handleSubmit}> Submit </button>
-	<p>Hello {result2}</p> 
+	<p>Hello1 {result2}</p> 
 	<br>
-	<p>Hello {tStockName}</p>
+	<p>Hello2 {tStockName}</p>
 	<br>
-	<p>Hello {tNewestSeason}</p>
+	<p>Hello3 {tNewestSeason}</p>
 	<br>
-	<p>Hello {tStock6data2}</p>
+	<p>Hello4 {tStock6data2}</p>
 
 </main>
 
