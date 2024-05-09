@@ -4,7 +4,7 @@
 
 function handleSubmit() {
 
-  name3 = [...name3, name2]; 
+  name3 = [...name3, name2]; //解壓縮空陣列name3 帶入輸入的name2 全新陣列 位址有變 才會響應
 
   result2 = `https://stock6-restfulex.onrender.com/api/Stock6Sign202402/getstockinfo/${name3}`
 
@@ -14,10 +14,12 @@ function handleSubmit() {
     .then((data) => data.json())
     .then((response) => {
       const { cStockName, cNewestSeason } = response
-      let tStockName = cStockName
-      let tNewestSeason = cNewestSeason
-      let tStock6data2 = response
-
+      let tStockName = [];
+	  tStockName = [...tStockName, cStockName];
+      let tNewestSeason = [];
+	  tNewestSeason = [...tStockName, cStockName];
+	  
+      let tStock6data2 = response;
       console.log(response)
 
       console.log(tStockName)
@@ -36,7 +38,7 @@ function handleSubmit() {
 
 <main>
 
-	<input bind:value={name2} placeholder="enter your name" />
+	<input bind:value={name2} placeholder="輸入股票代碼" />
 	<p>Hello {name2 || 'stranger'}!</p>
 	<button on:click={handleSubmit}> Submit </button>
 	<p>Hello1 {result2}</p> 
