@@ -16,21 +16,27 @@ function handleSubmit() {
       const { cStockName, cNewestSeason } = response
       
 	  tStockName = [...tStockName, cStockName];
+	  tStockName2 = tStockName;
+	  tStockName = [];
+
 
 	  tNewestSeason = [...tNewestSeason, cNewestSeason];
+	  tNewestSeason2 = tNewestSeason;
+	  tNewestSeason = [];
+
 	  
       let tStock6data2 = response;
       console.log(response)
 
-      console.log(tStockName)
-      console.log(tNewestSeason)
+      console.log(tStockName2)
+      console.log(tNewestSeason2)
       console.log(tStock6data2)
 	  tStockName = [];
 	  tNewestSeason = [];
     })
 }
 	export let tStockName = [], tNewestSeason = [], tStock6data2;
-	
+	export let tStockName2 = '', tNewestSeason2 = ''
 	export let name2;
 	export let name3 = [];
 	export let result2;
@@ -45,9 +51,9 @@ function handleSubmit() {
 	<button on:click={handleSubmit}> Submit </button>
 	<p>Hello1 {result2}</p> 
 	<br>
-	<p>Hello2 {tStockName}</p>
+	<p>Hello2 {tStockName2}</p>
 	<br>
-	<p>Hello3 {tNewestSeason}</p>
+	<p>Hello3 {tNewestSeason2}</p>
 	<br>
 	<p>Hello4 {tStock6data2}</p>
 
