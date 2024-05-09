@@ -14,9 +14,9 @@ function handleSubmit() {
     .then((data) => data.json())
     .then((response) => {
       const { cStockName, cNewestSeason } = response
-      let tStockName = [];
+      
 	  tStockName = [...tStockName, cStockName];
-      let tNewestSeason = [];
+
 	  tNewestSeason = [...tNewestSeason, cNewestSeason];
 	  
       let tStock6data2 = response;
@@ -27,7 +27,7 @@ function handleSubmit() {
       console.log(tStock6data2)
     })
 }
-	export let tStockName, tNewestSeason, tStock6data2;
+	export let tStockName = [], tNewestSeason = [], tStock6data2;
 	
 	export let name2;
 	export let name3 = [];
