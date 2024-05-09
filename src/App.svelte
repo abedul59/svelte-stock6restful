@@ -6,7 +6,7 @@ function handleSubmit() {
 
   name3 = [...name3, name2];
 
-  result2 = `https://stock6-restfulex.onrender.com/api/Stock6Sign202403/getstockinfo/${name3}`
+  result2 = `https://stock6-restfulex.onrender.com/api/Stock6Sign202402/getstockinfo/${name3}`
 
   console.log(`最新得到網址為${result2}`)
   fetch(result2)
