@@ -1,6 +1,13 @@
 <script>
+
+
+let name2;
+let result2 = '';
+
 function handleSubmit() {
-  let name2;
+
+
+
   let result2 = `https://stock6-restfulex.onrender.com/api/Stock6Sign202403/getstockinfo/${name2}`
 
   console.log(`最新得到網址為${result2}`)
@@ -19,7 +26,7 @@ function handleSubmit() {
       console.log(tStock6data2)
     })
 }
-	export let result2, tStockName, tNewestSeason, tStock6data2, name2;
+	export let tStockName, tNewestSeason, tStock6data2;
 	export let name;
 
 
