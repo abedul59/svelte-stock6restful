@@ -1,8 +1,7 @@
 <script>
 
 
-let name2;
-let result2 = '';
+
 
 function handleSubmit() {
 
@@ -28,6 +27,8 @@ function handleSubmit() {
 }
 	export let tStockName, tNewestSeason, tStock6data2;
 	export let name;
+	export let name2;
+	export let result2 = '';
 
 
 </script>
