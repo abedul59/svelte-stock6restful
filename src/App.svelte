@@ -4,10 +4,11 @@
 
 function handleSubmit() {
 
-  name3 = [...name3, name2];
+  name3 = [...name3, name2]; 
 
   result2 = `https://stock6-restfulex.onrender.com/api/Stock6Sign202402/getstockinfo/${name3}`
 
+  name3 = [];//clean name3 array to avoid repitition
   console.log(`最新得到網址為${result2}`)
   fetch(result2)
     .then((data) => data.json())
@@ -25,7 +26,7 @@ function handleSubmit() {
     })
 }
 	export let tStockName, tNewestSeason, tStock6data2;
-	export let name;
+	
 	export let name2;
 	export let name3 = [];
 	export let result2;
@@ -34,9 +35,7 @@ function handleSubmit() {
 </script>
 
 <main>
-	<h1>Hello {name}!</h1>
-	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
-	<br>
+
 	<input bind:value={name2} placeholder="enter your name" />
 	<p>Hello {name2 || 'stranger'}!</p>
 	<button on:click={handleSubmit}> Submit </button>
