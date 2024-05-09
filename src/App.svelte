@@ -1,10 +1,15 @@
 <script>
 	export let name;
+	export let name2 = '';
 </script>
 
 <main>
 	<h1>Hello {name}!</h1>
 	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
+	<br>
+	<input bind:value={name2} placeholder="enter your name" />
+	<p>Hello {name2 || 'stranger'}!</p>
+
 </main>
 
 <style>
