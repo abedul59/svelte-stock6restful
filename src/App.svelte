@@ -31,7 +31,7 @@ function handleSubmit() {
 	<br>
 	<input bind:value={name2} placeholder="enter your name" />
 	<p>Hello {name2 || 'stranger'}!</p>
-	<button on:click|once={handleSubmit}> Submit </button>
+	<button on:click={handleSubmit}> Submit </button>
 	<p>Hello1 {result2}</p> 
 	<br>
 	<p>Hello2 {tStockName}</p>
