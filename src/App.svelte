@@ -17,7 +17,7 @@ function handleSubmit() {
       let tStockName = [];
 	  tStockName = [...tStockName, cStockName];
       let tNewestSeason = [];
-	  tNewestSeason = [...tStockName, cStockName];
+	  tNewestSeason = [...tNewestSeason, cNewestSeason];
 	  
       let tStock6data2 = response;
       console.log(response)
