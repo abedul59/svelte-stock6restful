@@ -1,6 +1,28 @@
 <script>
+function handleSubmit() {
+  let result2 = `https://stock6-restfulex.onrender.com/api/Stock6Sign202403/getstockinfo/${inputText2.value}`
+
+  console.log(`最新得到網址為${result2}`)
+  fetch(result2)
+    .then((data) => data.json())
+    .then((response) => {
+      const { cStockName, cNewestSeason } = response
+      let tStockName = cStockName
+      let tNewestSeason = cNewestSeason
+      let tStock6data2 = response
+
+      console.log(response)
+
+      console.log(tStockName)
+      console.log(tNewestSeason)
+      console.log(tStock6data2)
+    })
+}
+	export let result2, tStockName, tNewestSeason, tStock6data2;
 	export let name;
 	export let name2 = '';
+
+
 </script>
 
 <main>
@@ -9,6 +31,14 @@
 	<br>
 	<input bind:value={name2} placeholder="enter your name" />
 	<p>Hello {name2 || 'stranger'}!</p>
+	<button on:click|once={handleSubmit}> Submit </button>
+	<p>Hello {result2}</p> 
+	<br>
+	<p>Hello {tStockName}</p>
+	<br>
+	<p>Hello {tNewestSeason}</p>
+	<br>
+	<p>Hello {tStock6data2}</p>
 
 </main>
 
