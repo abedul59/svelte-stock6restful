@@ -4,7 +4,7 @@
 
 function handleSubmit() {
 
-  name3 = [...name3, name2]; //解壓縮空陣列name3 帶入輸入的name2 全新陣列 位址有變 才會響應
+  name3 = name2; //解壓縮空陣列name3 帶入輸入的name2 全新陣列 位址有變 才會響應
 
   result2 = `https://stock6-restfulex.onrender.com/api/Stock6Sign202402/getstockinfo/${name3}`
 
@@ -17,30 +17,25 @@ function handleSubmit() {
 
 	  tStockID = cStockID;
       
-	  tStockName = [...tStockName, cStockName];
-	  tStockName2 = tStockName;
-	  tStockName = [];
+	  tStockName = cStockName;
 
+	  tNewestSeason = cNewestSeason;
 
-	  tNewestSeason = [...tNewestSeason, cNewestSeason];
-	  tNewestSeason2 = tNewestSeason;
-	  tNewestSeason = [];
 
 	  
       let tStock6data2 = response;
       console.log(response)
 
-      console.log(tStockName2)
-      console.log(tNewestSeason2)
+      console.log(tStockName)
+      console.log(tNewestSeason)
       console.log(tStockID)
-	  tStockName = [];
-	  tNewestSeason = [];
+
     })
 }
-	export let tStockName = [], tNewestSeason = [];
-	export let tStockName2 = '', tNewestSeason2 = ''
+	export let tStockName, tNewestSeason;
+
 	export let name2;
-	export let name3 = [];
+	export let name3;
 	export let result2;
 	export let tStockID;
 
