@@ -13,7 +13,9 @@ function handleSubmit() {
   fetch(result2)
     .then((data) => data.json())
     .then((response) => {
-      const { cStockName, cNewestSeason } = response
+      const { cStockName, cNewestSeason, cStockID } = response
+
+	  tStockID = cStockID;
       
 	  tStockName = [...tStockName, cStockName];
 	  tStockName2 = tStockName;
@@ -30,16 +32,17 @@ function handleSubmit() {
 
       console.log(tStockName2)
       console.log(tNewestSeason2)
-      console.log(tStock6data2)
+      console.log(tStockID)
 	  tStockName = [];
 	  tNewestSeason = [];
     })
 }
-	export let tStockName = [], tNewestSeason = [], tStock6data2;
+	export let tStockName = [], tNewestSeason = [];
 	export let tStockName2 = '', tNewestSeason2 = ''
 	export let name2;
 	export let name3 = [];
 	export let result2;
+	export let tStockID;
 
 
 </script>
@@ -55,7 +58,7 @@ function handleSubmit() {
 	<br>
 	<p>Hello3 {tNewestSeason2}</p>
 	<br>
-	<p>Hello4 {tStock6data2}</p>
+	<p>Hello4 {tStockID}</p>
 
 </main>
 
