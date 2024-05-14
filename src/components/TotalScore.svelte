@@ -31,123 +31,123 @@ export let cStockID,cStockName,cNewestRev,cNewestSeason,cSign1,cSign2,cSign3,cSi
   style="border: 1px solid black; margin-left: auto; margin-right: auto"
 >
   <caption>
-    <FONT SIZE="6">六大指標</FONT>
+    六大指標
   </caption>
   <tr>
     <td style="background-color: #d3a4ff" align="center">
-      <div><FONT SIZE="7">台股代號：</FONT></div>
+      <div>台股代號：</div>
     </td>
     <td align="center">
       <div>
-        <FONT SIZE="7">{{ cStockID }}</FONT>
+        {{ cStockID }}
       </div>
     </td>
   </tr>
 
   <tr>
     <td style="background-color: #d3a4ff" align="center">
-      <div><FONT SIZE="7">股票名稱：</FONT></div>
+      <div>股票名稱：</div>
     </td>
     <td align="center">
       <div>
-        <FONT SIZE="7">{{ cStockName }}</FONT>
+        {{ cStockName }}
       </div>
     </td>
   </tr>
   <tr>
     <td style="background-color: #d3a4ff" align="center">
-      <div><FONT SIZE="7">最新營收月份：</FONT></div>
+      <div>最新營收月份：</div>
     </td>
     <td align="center">
       <div>
-        <FONT SIZE="7">{{ cNewestRev }}</FONT>
+        {{ cNewestRev }}
       </div>
     </td>
   </tr>
   <tr>
     <td style="background-color: #d3a4ff" align="center">
-      <div><FONT SIZE="7">最新財報季度：</FONT></div>
+      <div>最新財報季度：</div>
     </td>
     <td align="center">
       <div>
-        <FONT SIZE="7">{{ cNewestSeason }}</FONT>
+        {{ cNewestSeason }}
       </div>
     </td>
   </tr>
 
   <tr>
     <td style="background-color: #ffa6ff" align="center">
-      <div><FONT SIZE="7">營收評等：</FONT></div>
+      <div>營收評等：</div>
     </td>
     <td align="center">
       <div>
-        <FONT SIZE="7">{{ cSign1 }}</FONT>
+        {{ cSign1 }}
       </div>
     </td>
   </tr>
 
   <tr>
     <td style="background-color: #ffa6ff" align="center">
-      <div><FONT SIZE="7">營益率評等：</FONT></div>
+      <div>營益率評等：</div>
     </td>
     <td align="center">
       <div>
-        <FONT SIZE="7">{{ cSign2 }}</FONT>
+        {{ cSign2 }}
       </div>
     </td>
   </tr>
 
   <tr>
     <td style="background-color: #ffa6ff" align="center">
-      <div><FONT SIZE="7">稅後淨利評等：</FONT></div>
+      <div>稅後淨利評等：/div>
     </td>
     <td align="center">
       <div>
-        <FONT SIZE="7">{{ cSign3 }}</FONT>
+        {{ cSign3 }}
       </div>
     </td>
   </tr>
 
   <tr>
     <td style="background-color: #ffa6ff" align="center">
-      <div><FONT SIZE="7">EPS評等：</FONT></div>
+      <div>EPS評等：</div>
     </td>
     <td align="center">
       <div>
-        <FONT SIZE="7">{{ cSign4 }}</FONT>
+        {{ cSign4 }}
       </div>
     </td>
   </tr>
 
   <tr>
     <td style="background-color: #ffa6ff" align="center">
-      <div><FONT SIZE="7">存貨週轉率評等：</FONT></div>
+      <div>存貨週轉率評等：</div>
     </td>
     <td align="center">
       <div>
-        <FONT SIZE="7">{{ cSign5 }}</FONT>
+        {{ cSign5 }}
       </div>
     </td>
   </tr>
 
   <tr>
     <td style="background-color: #ffa6ff" align="center">
-      <div><FONT SIZE="7">現金流量評等：</FONT></div>
+      <div>現金流量評等：</div>
     </td>
     <td align="center">
       <div>
-        <FONT SIZE="7">{{ cSign6 }}</FONT>
+        {{ cSign6 }}
       </div>
     </td>
   </tr>
 
   <tr>
     <td style="background-color: #ff2d2d" align="center">
-      <div><FONT SIZE="7">總平均：</FONT></div>
+      <div>總平均：</div>
     </td>
     <td align="center">
       <div>
-        <FONT SIZE="7">{{ cAverageScore }}</FONT>
+        {{ cAverageScore }}
       </div>
     </td>
   </tr>
