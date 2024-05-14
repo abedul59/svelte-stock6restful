@@ -8,6 +8,7 @@ function handleSubmit() {
 
   result2 = `https://stock6-restfulex.onrender.com/api/Stock6Sign202402/getstockinfo/${name3}`
 
+
   console.log(`最新得到網址為${result2}`)
   fetch(result2)
     .then((data) => data.json())
@@ -22,7 +23,7 @@ function handleSubmit() {
 
 
 	  
-      tStock6data2 = response;
+      let tStock6data2 = response;
       console.log(response)
 
       console.log(tStockName)
@@ -31,8 +32,10 @@ function handleSubmit() {
 
     })
 }
-	export let tStockName, tNewestSeason, tStock6data2;
-	export let name3, name2;
+	export let tStockName, tNewestSeason;
+
+	export let name2;
+	export let name3;
 	export let result2;
 	export let tStockID;
 
@@ -46,9 +49,9 @@ function handleSubmit() {
 	<button on:click={handleSubmit}> Submit </button>
 	<p>Hello1 {result2}</p> 
 	<br>
-	<p>Hello2 {tStockName2}</p>
+	<p>Hello2 {tStockName}</p>
 	<br>
-	<p>Hello3 {tNewestSeason2}</p>
+	<p>Hello3 {tNewestSeason}</p>
 	<br>
 	<p>Hello4 {tStockID}</p>
 
