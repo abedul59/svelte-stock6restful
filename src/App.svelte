@@ -1,6 +1,6 @@
 <script>
 
-
+import TotalScore from '../components/TotalScore.svelte';
 
 function handleSubmit() {
 
@@ -23,7 +23,7 @@ function handleSubmit() {
 
 
 	  
-      let tStock6data2 = response;
+      tStock6data2 = response;
       console.log(response)
 
       console.log(tStockName)
@@ -32,7 +32,7 @@ function handleSubmit() {
 
     })
 }
-	export let tStockName, tNewestSeason;
+	export let tStockName, tNewestSeason, tStock6data2;
 
 	export let name2;
 	export let name3;
@@ -54,6 +54,9 @@ function handleSubmit() {
 	<p>Hello3 {tNewestSeason}</p>
 	<br>
 	<p>Hello4 {tStockID}</p>
+
+	<br>
+	<TotalScore  {...tStock6data2} />
 
 </main>
 
