@@ -1,83 +1,20 @@
 <script>
+	import { Router, Link, Route } from "svelte-routing";
+	import Stock6Sign2403 from "./routes/Stock6Sign2403.svelte";
 
-import TotalScore from './components/TotalScore.svelte';
+  
+	export let url = "";
+  </script>
+  
+  <Router {url}>
+	<nav>
+	  <Link to="/">Home</Link>
+	  <Link to="/Stock6Sign2403">Stock6Sign2403</Link>
 
-function handleSubmit() {
-
-  name3 = name2; 
-
-  result2 = `https://stock6-restfulex.onrender.com/api/Stock6Sign202402/getstockinfo/${name3}`
-
-
-  console.log(`最新得到網址為${result2}`)
-  fetch(result2)
-    .then((data) => data.json())
-    .then((response) => {
-      const { cStockName, cNewestSeason, cStockID } = response
-
-	  tStockID = cStockID;
-      
-	  tStockName = cStockName;
-
-	  tNewestSeason = cNewestSeason;
+	</nav>
+	<div>
+	  <Route path="/Stock6Sign2403" component={Stock6Sign2403} />
 
 
-	  
-      tStock6data2 = response;
-      console.log(response)
-
-      console.log(tStockName)
-      console.log(tNewestSeason)
-      console.log(tStockID)
-
-    })
-}
-	export let tStockName, tNewestSeason, tStock6data2;
-
-	export let name2;
-	export let name3;
-	export let result2;
-	export let tStockID;
-
-
-</script>
-
-<main>
-
-	<input bind:value={name2} placeholder="輸入股票代碼" />
-	<p>Hello {name2 || 'stranger'}!</p>
-	<button on:click={handleSubmit}> Submit </button>
-	<p>Hello1 {result2}</p> 
-	<br>
-	<p>Hello2 {tStockName}</p>
-	<br>
-	<p>Hello3 {tNewestSeason}</p>
-	<br>
-	<p>Hello4 {tStockID}</p>
-
-	<br>
-	<TotalScore  {...tStock6data2} />
-
-</main>
-
-<style>
-	main {
-		text-align: center;
-		padding: 1em;
-		max-width: 240px;
-		margin: 0 auto;
-	}
-
-	h1 {
-		color: #ff3e00;
-		text-transform: uppercase;
-		font-size: 4em;
-		font-weight: 100;
-	}
-
-	@media (min-width: 640px) {
-		main {
-			max-width: none;
-		}
-	}
-</style>
+	</div>
+  </Router>
