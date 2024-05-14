@@ -39,7 +39,7 @@ export let cStockID,cStockName,cNewestRev,cNewestSeason,cSign1,cSign2,cSign3,cSi
     </td>
     <td align="center">
       <div>
-        {{ cStockID }}
+        { cStockID }
       </div>
     </td>
   </tr>
@@ -50,7 +50,7 @@ export let cStockID,cStockName,cNewestRev,cNewestSeason,cSign1,cSign2,cSign3,cSi
     </td>
     <td align="center">
       <div>
-        {{ cStockName }}
+        { cStockName }
       </div>
     </td>
   </tr>
@@ -60,7 +60,7 @@ export let cStockID,cStockName,cNewestRev,cNewestSeason,cSign1,cSign2,cSign3,cSi
     </td>
     <td align="center">
       <div>
-        {{ cNewestRev }}
+        { cNewestRev }
       </div>
     </td>
   </tr>
@@ -70,7 +70,7 @@ export let cStockID,cStockName,cNewestRev,cNewestSeason,cSign1,cSign2,cSign3,cSi
     </td>
     <td align="center">
       <div>
-        {{ cNewestSeason }}
+        { cNewestSeason }
       </div>
     </td>
   </tr>
@@ -81,7 +81,7 @@ export let cStockID,cStockName,cNewestRev,cNewestSeason,cSign1,cSign2,cSign3,cSi
     </td>
     <td align="center">
       <div>
-        {{ cSign1 }}
+        { cSign1 }
       </div>
     </td>
   </tr>
@@ -92,7 +92,7 @@ export let cStockID,cStockName,cNewestRev,cNewestSeason,cSign1,cSign2,cSign3,cSi
     </td>
     <td align="center">
       <div>
-        {{ cSign2 }}
+        { cSign2 }
       </div>
     </td>
   </tr>
@@ -103,7 +103,7 @@ export let cStockID,cStockName,cNewestRev,cNewestSeason,cSign1,cSign2,cSign3,cSi
     </td>
     <td align="center">
       <div>
-        {{ cSign3 }}
+        { cSign3 }
       </div>
     </td>
   </tr>
@@ -114,7 +114,7 @@ export let cStockID,cStockName,cNewestRev,cNewestSeason,cSign1,cSign2,cSign3,cSi
     </td>
     <td align="center">
       <div>
-        {{ cSign4 }}
+        { cSign4 }
       </div>
     </td>
   </tr>
@@ -125,7 +125,7 @@ export let cStockID,cStockName,cNewestRev,cNewestSeason,cSign1,cSign2,cSign3,cSi
     </td>
     <td align="center">
       <div>
-        {{ cSign5 }}
+        { cSign5 }
       </div>
     </td>
   </tr>
@@ -136,7 +136,7 @@ export let cStockID,cStockName,cNewestRev,cNewestSeason,cSign1,cSign2,cSign3,cSi
     </td>
     <td align="center">
       <div>
-        {{ cSign6 }}
+        { cSign6 }
       </div>
     </td>
   </tr>
@@ -147,7 +147,7 @@ export let cStockID,cStockName,cNewestRev,cNewestSeason,cSign1,cSign2,cSign3,cSi
     </td>
     <td align="center">
       <div>
-        {{ cAverageScore }}
+        { cAverageScore }
       </div>
     </td>
   </tr>
