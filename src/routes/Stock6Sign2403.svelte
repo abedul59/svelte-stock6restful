@@ -1,6 +1,6 @@
 <script>
 
-    import TotalScore from './components/TotalScore.svelte';
+    import TotalScore from '../components/TotalScore.svelte';
     
     function handleSubmit() {
     
