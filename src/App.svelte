@@ -32,7 +32,7 @@ function handleSubmit() {
     })
 }
 	export let tStockName, tNewestSeason, tStock6data2;
-	export let name3;
+	export let name3, name2;
 	export let result2;
 	export let tStockID;
 
